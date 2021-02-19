@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhanglubin.multipleDataSources.mapper.datasourceWork.DataSourcesWorkMapper">
+
+
+    <select id="getClientName" resultType="java.lang.String">
+        select client_secret from test_client where client_id = 'yinyinShop'
+    </select>
+</mapper>
